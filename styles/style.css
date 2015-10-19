@@ -1,0 +1,362 @@
+/*-------------------------
+	Main Styles
+---------------------------*/
+
+html {
+	/*Default browsers are 16px, this sets it to base 10px*/
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Merriweather', serif;
+}
+
+h1, h2, h3, h4, h5, h6, li {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.container {
+	padding: 10rem 0 10rem;
+	text-align: center;
+}
+
+.hold {
+	width: 80%;
+	margin: 0 auto;
+}
+
+section {
+	font-size: 1.6rem;
+}
+
+section h1, h2 {
+	font-size: 2rem;
+}
+
+.fa {
+	color: #27282d;
+	/*black */
+}
+
+/*-------------------------
+	Header
+---------------------------*/
+
+.fixedNav {
+	width: 100%;
+	padding: .5rem 5rem;
+	position: fixed;
+	background: #27282d;
+	z-index: 9999;
+	/*ensure nothing goes in front of fixed nav*/
+}
+
+.logo {
+	max-width: 25%;
+	border-radius: 20%;
+	font-size: 1.5rem;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0 2.5rem;
+	border: .25rem solid #eee;
+	padding: 0.5rem 1.5rem;
+	float: left;
+	color: #eee;
+	transition: 1s;
+}
+
+.logo:hover {
+	background: #828282;
+	transition: background-color;
+	transition-duration: 0.5s;
+}
+
+.logo:active {
+	background: #879999;
+	transition: background-color;
+	transition-duration: 0.1s;
+}
+
+.logo2 {
+	border-top: .25rem solid #eee;
+	color: #e7d24d;
+	float: left;
+}
+
+.mainNav {
+	float: right;
+	margin: 1rem 3.5rem;
+	max-width: 75%;
+}
+
+.mainNav li {
+	float: left;
+	margin: 1rem 1rem 0 1rem;
+}
+
+.mainNav li a {
+	padding: 1rem 2rem;
+	border: .2rem solid #eee;
+	color: #eee;
+	background: #27282d;
+  font-size: 1rem;
+  letter-spacing: .25rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition-duration: 1s;
+}
+
+.mainNav li a:hover {
+	background: #828282;
+	transition: background-color;
+	transition-duration: 0.5s;
+}
+
+.mainNav li a:active {
+	background: #879999;
+	transition: background-color;
+	transition-duration: 0.1s;
+}
+
+/*-------------------------
+	Content - Top Section
+---------------------------*/
+
+.greeting {
+	padding: 1rem 0;
+}
+
+.greeting h1 {
+	width: 35%;
+	padding: 1rem 2rem 5rem 16rem;
+	letter-spacing: .1rem;
+}
+
+.scroll {
+	width: 10rem;
+	padding: 0 22rem;
+}
+
+.fa-chevron-down {
+	text-align: center;
+	padding: 0 1rem;
+	/*color: #27282d;*/
+}
+
+section.topSection {
+	max-width: 100%;
+	background-image: url('../images/gallery/JackieHeader2015Kraken.jpg');
+	background-size: cover;
+	padding: 20rem 0 35rem;
+}
+
+/*-------------------------
+	Content - About
+---------------------------*/
+.box, .box2 {
+	max-width: 50%;
+	padding: 2rem;
+	float: left;
+}
+
+.box {
+	text-align: left;
+}
+
+.box2 {
+	float: right;
+}
+
+section.about h2 {
+	margin: 1rem 0;
+}
+
+.fa-wheelchair, .devicons {
+	font-size: 7rem;
+}
+
+.fa-wheelchair, .devicons {
+	padding: 0 1rem;
+	/*color: #27282d;*/
+	/*black*/
+}
+
+.fa:hover, .devicons:hover {
+	color: #828282;
+	transition-duration: 0.5s;
+}
+
+/*changes everything to grey*/
+
+.fa, .devicons {
+	color: #879999;
+	transition: color;
+	transition-duration: 0.1s;
+}
+
+ul.skills {
+	padding: 1.5rem;
+}
+    
+
+.skills li {
+	float: left;
+	width: 16%;
+	margin: 2%;
+}
+
+.skills li:nth-child(5n+1) {
+  clear: left;
+}
+
+.skillsContainer {
+	width: 80%%;
+	margin: 1rem auto;
+}
+
+.skillsContainer img {
+	max-width: 100%; /* images will never be bigger than their parent element. */
+	border-radius: 5%;
+}
+
+/*-------------------------
+	Portfolio Content - Projects + Gallery
+---------------------------*/
+
+section.portfolio {
+	padding: 11rem 0;
+	text-align: left;
+}
+
+section.portfolio h1 {
+	text-align: center;
+}
+
+section.about p {
+	padding: 2rem 0 0 0;
+}
+
+.gallery li {
+	float: left;
+	width: 16%;
+	margin: 2%;
+}
+
+.gallery li:nth-child(5n+1) {
+    clear: left;
+}
+
+.galleryContainer {
+	width: 80%;
+	margin: 30px auto;
+}
+
+.galleryContainer img {
+	max-width: 100%;
+	border-radius: 5%;
+}
+
+/*-------------------------
+	Content - Blog
+---------------------------*/
+
+section.blog {
+	padding: 9rem 5rem;
+	clear: both;
+}
+
+.workContainer {
+	width: 85%;
+	margin: 1.5rem auto;
+}
+
+ul.work {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.work li {
+	float: left;
+	width: 20%;
+	margin: 2%;
+}
+
+.workContainer img {
+	max-width: 100%;
+	border-radius: 5%;
+}
+
+.work li:nth-child(4n+1) {
+  clear: left;
+}
+
+.fa-medium{
+	padding: 2rem 5rem;
+}
+
+/*-------------------------
+	Content - Contact
+---------------------------*/
+.contact h2 {
+	font-size: 3rem;
+}
+
+section.contact {
+	padding: 15rem 20rem 10rem;
+}
+
+section.contact p {
+	padding: 5rem;
+}
+
+/*-------------------------
+	Footer
+---------------------------*/
+footer {
+	text-align: center;
+	font-size: 1.3rem;
+}
+
+/*------------------------------
+	Website and Colors Keybox
+--------------------------------*/
+
+/*#C8D7D4; backgroundblue - highlight*/
+/*#eeeeee; white - main background*/
+/*#828282; elephantgrey - */
+/*#a9cdcd; skyblue*/
+/*#afa376; fawnbrown*/
+/*#879999; content color sharkgrey*/
+/*#435555; charcoalgrey*/
+/*#464d4b; stonegrey*/
+/*#27282d; black*/
+/*#e7d24d; sandyellow*/
+
+/* a chevron = arrow down symbol*/
+
+/*
+headings: font-family: 'Lato', sans-serif;
+body: font-family: 'Merriweather', serif;
+logo: font-family: 'Montserrat', sans-serif;
+
+/*-----------------
+	CREDITS
+------------------*/
+ 
+/*Icons by Dev Icons.com 
+
+Photos: by Kamal Dai and Liz Beddall with permission from Charles Crothall and Diala Canelo.
+
+Chris Coyier of CSS Tricks amazing jQuery smooth scroll
+
+Designs inspired by Tomasz Mazurczak and HackerYou layouts
+http://www.thomsoon.com/about-me.html
+For creating a beautiful and free UI kit for all to use*/
+
